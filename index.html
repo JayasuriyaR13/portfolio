@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <p>I am R. Jayasuriya</p>
+        <span id="animatedText">Hello! I am a Python Developer</span>
+      </div>
+      
+      
+      <div>
+        <h5>connect with me </h5>
+        <a href="https://www.linkedin.com/in/jayasuriya-pythonfullstackdeveloper?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src ="https://img.icons8.com/?size=100&id=kBCrQMzpQDLQ&format=png&color=000000"/></a>
+       <a href="https://github.com/JayasuriyaR13"><img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000"/></a>
+       <a href="https://mail.google.com/"><img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000"/></a>
+       <a href=""><img src="https://img.icons8.com/?size=100&id=103413&format=png&color=000000"/></a>
+       </div>
+       <div class="marquee">
+        <div class="marquee-text">
+          my skill: HTML, CSS, Python, MYSQL, SQL, JavaScript, React.js, GitHub.
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+
+
+  <section id="about">
+    <div class="about-content">
+      <div class="about-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-flex">
+        <img src="photo.jpg" alt="Profile Picture" class="profile-img">
+        <div class="about-text">
+          <p>I am a highly motivated fresher with a strong foundation in Python programming and full-stack development.
+            
+            <span id="moreText">
+              " My expertise spans across frontend and backend technologies, including HTML, CSS, Flask, Django, and SQL/MySQL. With hands-on experience in designing and developing dynamic web applications, I am eager to apply my skills as a Python Developer or Full Stack Developer. I am committed to delivering efficient, scalable, and user-friendly solutions, and I thrive in collaborative environments where I can contribute to impactful projects."
+            </span>
+          </p>
+          <button id="readMoreBtn" onclick="toggleText()">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="projects-section">
+    <div class="overlay"></div>
+    <div class="container">
+      <h2>Our Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <h3>Review on Crop Prediction using Machine Learning in Agriculture</h3>
+          <p>Tools: HTML, CSS, Python, Flask App, and Machine Learning Algorithms  <a href="https://github.com/JayasuriyaR13/mainproject.git">Get more</a></p>
+          <div class="more-content" id="more-content-1">
+            <p>
+              Machine learning algorithms like Random Forest and Decision Trees analyze historical data to enhance crop yield, ensuring efficient water management by determining the water levels each crop requires and optimizing fertilizer use based on soil conditions for sustainability.<br>
+              The system recommends the best crops for growth based on soil type, helping farmers plan more effectively. Additionally, integrating real-time weather updates allows for pre-planning to ensure crop health and adaptability to climate changes, leading to better agricultural outcomes. This approach improves decision-making across yield, water, fertilizer, and crop recommendations, ensuring data-driven solutions for farmers.
+            </p>
+          </div>
+          <button class="read-more-btn" onclick="toggleContent(1)">Read More</button>
+        </div>
+  
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Short description of the project...</p>
+          <div class="more-content" id="more-content-2">
+            <p>Detailed project description...</p>
+          </div>
+          <button class="read-more-btn" onclick="toggleContent(2)">Read More</button>
+        </div>
+  
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+  
+  <section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-selection">
+      <!-- Skill Items -->
+      <div class="skill-item" data-skill="HTML">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" /><p>html</p>
+      </div>
+      <div class="skill-item" data-skill="CSS">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" /><p>css</p>
+      </div>
+      <div class="skill-item" data-skill="JavaScript">
+        <img src="https://img.icons8.com/?size=100&id=Nkym0Ujb8VGI&format=png&color=000000" alt="JavaScript" /><p>JavaScript</p>
+
+      </div>
+      <!-- Skill Items -->
+      <div class="skill-item" data-skill="React">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React.js" /><p>React.Js</p>
+      </div>
+      <div class="skill-item" data-skill="SQL">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-filetype-sql" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM0 14.841a1.13 1.13 0 0 0 .401.823q.194.162.478.252c.284.09.411.091.665.091q.507 0 .858-.158.355-.159.54-.44a1.17 1.17 0 0 0 .187-.656q0-.336-.135-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.565-.21l-.621-.144a1 1 0 0 1-.405-.176.37.37 0 0 1-.143-.299q0-.234.184-.384.187-.152.513-.152.214 0 .37.068a.6.6 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.199-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.44 0-.776.15-.337.149-.528.421-.19.273-.19.639 0 .302.123.524t.351.367q.229.143.54.213l.618.144q.31.073.462.193a.39.39 0 0 1 .153.325q0 .165-.085.29A.56.56 0 0 1 2 15.31q-.167.07-.413.07-.176 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zm6.878 1.489-.507-.739q.264-.243.401-.6.138-.358.138-.806v-.501q0-.556-.208-.967a1.5 1.5 0 0 0-.589-.636q-.383-.225-.917-.225-.527 0-.914.225-.384.223-.592.636a2.14 2.14 0 0 0-.205.967v.5q0 .554.205.965.208.41.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522q0-.369.114-.63a.9.9 0 0 1 .325-.398.9.9 0 0 1 .495-.138q.288 0 .495.138a.9.9 0 0 1 .325.398q.115.261.115.63v.522q0 .246-.053.445-.053.196-.155.34l-.106-.14-.105-.147h-.733l.451.65a.6.6 0 0 1-.251.047.87.87 0 0 1-.487-.147.9.9 0 0 1-.32-.404 1.7 1.7 0 0 1-.11-.644m3.986 1.057h1.696v.674H7.457v-3.999h.79z"/>
+      </svg><p>SQL</p>
+      </div>
+      <div class="skill-item" data-skill="MySQL">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="MySQL" /><p>MYSQL</p>
+      </div>
+      <div class="skill-item" data-skill="Git">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git/GitHub" /><p>GIT HUB</p>
+      </div>
+      <div class="skill-item" data-skill="Visual Studio">
+        <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="Visual Studio" /><p>Visual studio</p>
+      </div>
+      <div class="skill-item" data-skill="Python">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" /><p>python</p>
+      </div>
+      <div class="skill-item" data-skill="Django">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Django" /><p>MYSQL</p>
+      </div>
+      <div class="skill-item" data-skill="Flask">
+        <img src="https://img.icons8.com/?size=100&id=AqYCfGyGXlO7&format=png&color=000000" alt="Flask" /><p>Flask APP</p>
+      </div>
+      <div class="skill-item" data-skill="Flask">
+        <img src="https://img.icons8.com/?size=100&id=XPdRFanRZtNK&format=png&color=000000" alt="Flask" /><p>Django</p>
+      </div>
+    </div>
+  </section>
+  <section class="soft-skills-section">
+    <h2>Soft Skills</h2>
+    <div class="skills-selection">
+      <!-- Soft Skill Items -->
+      <div class="skill-item" data-skill="Team Building"><img src="https://img.icons8.com/?size=100&id=22RI47PWWsgU&format=png&color=000000"/>
+        <p>Team Building</p>
+      </div>
+      <div class="skill-item" data-skill="Problem Solving"><img src="https://img.icons8.com/?size=100&id=rVSB3GaDDURu&format=png&color=000000"/>
+        <p>Problem Solving</p>
+      </div>
+      <div class="skill-item" data-skill="Communication Skills"><img src="https://img.icons8.com/?size=100&id=tMC4YuymcQG1&format=png&color=000000"/>
+        <p>Communication Skills</p>
+      </div>
+      <div class="skill-item" data-skill="Decision Making"><img src="https://img.icons8.com/?size=100&id=sXhcqJ7QtKNM&format=png&color=000000"/>
+        <p>Decision Making</p>
+      </div>
+    </div>
+
+  </section>
+  <!-- Education and Certification Section -->
+<section class="education-certification-section">
+  <h2>Education and Certifications</h2>
+  <div class="content-wrapper">
+    <!-- Education Column -->
+    <div class="education-column">
+      <h3>Education</h3>
+      <div class="education-list">
+        <!-- Education Item 1 -->
+        <div class="education-item">
+          <h4>Ganadipathy Tulsi Jain Engineering College</h4>
+          <p class="degree">Master of Computer Applications (MCA)</p>
+          <p class="year">2022-2024</p>
+          <p class="grade">84%</p>
+        </div>
+        <!-- Education Item 2 -->
+        <div class="education-item">
+          <h4>Muthurangram Govt Arts and Science College</h4>
+          <p class="degree">B.Sc. Computer Science</p>
+          <p class="year">2019-2022</p>
+          <p class="grade">67%</p>
+        </div>
+      </div>
+    </div>
+    <!-- Certification Column -->
+    <div class="certification-column">
+      <h3>Certifications <a href="https://drive.google.com/drive/folders/1Tno8401OXLsWN6oLv1_2qqBXpZwt0LjN" target="_blank"><u>GET</u></a></h3>
+      <div class="certification-list">
+        <!-- Certification Item 1 -->
+        <div class="certification-item">
+          <h4>Python Course for Beginners</h4>
+          <p>With Certification</p>
+        </div>
+        <!-- Certification Item 2 -->
+        <div class="certification-item">
+          <h4>Full-stack Developer Bootcamp</h4>
+          <p>MasterBootcamp: Frontend to Backend</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
